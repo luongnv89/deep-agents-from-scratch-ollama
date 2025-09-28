@@ -21,8 +21,10 @@ from typing_extensions import Annotated, Literal
 from deep_agents_from_scratch.prompts import SUMMARIZE_WEB_SEARCH
 from deep_agents_from_scratch.state import DeepAgentState
 
+from langchain_ollama import ChatOllama
+# from langchain_mistralai import ChatMistralAI
 # Summarization model 
-summarization_model = init_chat_model(model="openai:gpt-4o-mini")
+summarization_model = ChatOllama(model="qwen3:8b", temperature=0.0)
 tavily_client = TavilyClient()
 
 class Summary(BaseModel):
