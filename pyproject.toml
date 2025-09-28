@@ -20,6 +20,7 @@ dependencies = [
     "markdownify>=1.2.0",
     "deepagents>=0.0.3",
     "langchain-ollama>=0.3.8",
+    "langchain-mistralai>=0.2.12",
 ]
 
 [project.optional-dependencies]
