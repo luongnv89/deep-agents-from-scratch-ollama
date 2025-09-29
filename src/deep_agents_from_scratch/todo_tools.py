@@ -54,7 +54,7 @@ def read_todos(
         tool_call_id: Injected tool call identifier for message tracking
 
     Returns:
-        Formatted string representation of the current TODO list
+        Formatted string representation of the current TODO list 
     """
     todos = state.get("todos", [])
     if not todos:
